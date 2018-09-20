@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>My Designed Menu</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.1/css/bulma.min.css">
+    <script type="text/javascript" src="script.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+
+    <div id="mySidenav" class="sidenav">
+        <a href="#" onclick="navFunction(document.getElementById('container'))">HOME</a><br>
+        <a href="#" onclick="navFunction(document.getElementById('container'))">STORE</a><br>
+        <a href="#" onclick="navFunction(document.getElementById('container'))">ABOUT</a>
+    </div>
+
+    <nav id="accueil">
+        <div class="navbar-brand">
+            <div class="navbar-start">
+                <div class="navbar-item">
+                    <div id="container" onclick="navFunction(this)">
+                        <div id="bar1"></div>
+                        <div id="bar2"></div>
+                        <div id="bar3"></div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </nav>
+    </div>
+    <div id="corps">
+        <div class="background"></div>
+    </div>
+</body>
+
+</html>

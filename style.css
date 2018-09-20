@@ -1,0 +1,79 @@
+@font-face {
+    font-family: "ChampagneBold";
+    src: url("fonts/champagne/ChampagneBold.ttf");
+}
+
+@font-face {
+    font-family: "Champagne";
+    src: url("fonts/champagne/Champagne.ttf");
+}
+
+.background {
+    background-image: url("images/wallpaper.jpg");
+    min-height: 850px;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+#container {
+    display: inline-block;
+    cursor: pointer;
+}
+
+#bar1,
+#bar2,
+#bar3 {
+    width: 35px;
+    height: 5px;
+    background-color: black;
+    margin: 6px 0;
+    margin-left: 10px;
+    transition: 0.4s;
+}
+
+.change #bar1 {
+    -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+    transform: rotate(-45deg) translate(-9px, 6px);
+}
+
+.change #bar2 {
+    opacity: 0;
+}
+
+.change #bar3 {
+    -webkit-transform: rotate(45deg) translate(-8px, -8px);
+    transform: rotate(45deg) translate(-8px, -8px);
+}
+
+.navbar-brand {
+    overflow: hidden;
+    position: fixed;
+    background-color: white;
+    width: 100%;
+    z-index: 1;
+}
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    background-color: white;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 6%;
+}
+
+.sidenav a {
+    text-decoration: none;
+    font-size: 20px;
+    color: rgb(161, 160, 160);
+    display: block;
+    transition: 0.3s;
+    padding-left: 35%;
+}
+
+.sidenav a:hover {
+    text-shadow: 2px 3px 2px rgb(165, 165, 165);
+    color: rgb(124, 124, 124);
+}
